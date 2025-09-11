@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Oracle Red Bull Racing — Media</title>
+  <meta name="description" content="Media page with responsive images, audio, and video about Max Verstappen and Oracle Red Bull Racing." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://example.com/media.html" />
+</head>
+<body>
+  <a href="#main">Skip to content</a>
+  <header>
+    <h1>Media Gallery</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="media.html" aria-current="page">Media</a></li>
+        <li><a href="extras.html">Extras</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article>
+      <header>
+        <h2>Explore Red Bull Racing Media</h2>
+      </header>
+
+      <section>
+        <h3>Responsive Image</h3>
+        <figure>
+          <picture>
+            <source srcset="assets/images/Large.jpg" media="(min-width: 1000px)">
+            <source srcset="assets/images/Medium.jpg" media="(min-width: 600px)">
+            <img src="assets/images/Small.jpeg" alt="Max Verstappen driving the Red Bull Racing car during a Grand Prix weekend">
+          </picture>
+          <figcaption>Responsive image of Max Verstappen’s RB20, using the <code>&lt;picture&gt;</code> element.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h3>Team Radio Clip</h3>
+        <p>Listen to a short audio clip from the Red Bull Racing garage:</p>
+        <audio controls>
+          <source src="assets/audio/Audio.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+
+      <section>
+        <h3>Race Highlights Video</h3>
+        <video controls width="640" poster="assets/images/Medium.jpg">
+          <source src="assets/video/Video.mp4" type="video/mp4">
+          <track src="assets/captions/Video.vtt" kind="captions" srclang="en" label="English" default>
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+        <p><small>This video demonstrates HTML5 video with captions (WebVTT track).</small></p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; <time datetime="2025">2025</time> Oracle Red Bull Racing Fan Page. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
